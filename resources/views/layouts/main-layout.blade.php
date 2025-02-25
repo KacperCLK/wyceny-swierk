@@ -9,6 +9,10 @@
         <link rel="icon" type="image/png" href="{{ asset('storage/images/'.$media['logo']['path']) }}">
 
         <meta charset="utf-8">
+
+        <meta name="title" content="Profesjonalne Wyceny Budowlane – Szybko i Dokładnie | Paweł Świerk">
+        <meta name="description" content="Oferuję rzetelne wyceny budowlane dla klientów indywidualnych i firm. Sprawdź koszty budowy, remontu lub inwestycji – skontaktuj się już dziś!">
+        <meta name="keywords" content="wyceny budowlane, kosztorysy budowlane, wycena remontu, kosztorys inwestycji, szacowanie kosztów budowy, wycena prac budowlanych">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Fonts -->
