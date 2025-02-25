@@ -9,10 +9,11 @@
         <h1 class="section__home__header">{{$settings['homeSec_header']}}</h1>
         <h2>{{$settings['homeSec_caption']}}</h2>
     
-        <a href="" class="section__home__link link-btn">{{$settings['homeSec_button']}}</a>
+        
+        <a href="#contact-section" class="section__home__link link-btn">{{$settings['homeSec_button']}}</a>
     </div>
     <div class="section__home__img-containter">
-        <img class="section__home__img" src="{{ asset('storage/images/home.png') }}" alt="About us main photo">
+        <img class="section__home__img" src="{{ asset('storage/images/'.$media['homeSec_photo']['path'])}}" alt="{{$media['homeSec_photo']['alt']}}">
     </div>
 </div>
 
@@ -42,13 +43,13 @@
     <h1 class="section__slogan__header">{{$settings['sloganSec_header']}}</h1>
 
     <div class="section__slogan__img-containter">
-        <img class="section__slogan__img" src="{{ asset('storage/images/slogan.png') }}" alt="About us main photo">
+        <img class="section__slogan__img" src="{{ asset('storage/images/'.$media['sloganSec_photo']['path']) }}" alt="{{$media['sloganSec_photo']['alt']}}">
     </div>
 </div>
 
-<div class="section section__contact">
+<div id="contact-section" class="section section__contact">
     <div class="section__contact__img-containter">
-        <img class="section__contact__img" src="{{ asset('storage/images/contact.png') }}" alt="About us main photo">
+        <img class="section__contact__img" src="{{ asset('storage/images/'.$media['contactSec_photo']['path']) }}" alt="{{$media['contactSec_photo']['alt']}}">
     </div>
     
     <div class="section__contact__text">
