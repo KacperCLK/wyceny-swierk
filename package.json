@@ -2,6 +2,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "compile:sass": "node-sass scss/app.scss css/app.css",
     "build": "vite build",
     "dev": "vite"
   },
