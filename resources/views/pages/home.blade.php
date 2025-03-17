@@ -17,7 +17,7 @@
     </div>
 </div>
 
-<div class="section section__about">
+<div class="section section__about" data-animate="fade" data-duration="1.2s" data-threshold="0.3">
     <h1 class="section__about__header">{{$settings['aboutSec_header']}}</h1>
 
     <p>{{$settings['aboutSec_paragraph_1']}}</p>
@@ -25,12 +25,16 @@
     <p>{{$settings['aboutSec_paragraph_3']}}</p>
 </div>
 
-<div class="section section__offer">
+<div class="section section__offer" data-animate="fade" data-duration="0.5s" data-threshold="0.3">
     <h1 class="section__offer__title">{{$settings['offerSec_header']}}</h1>
 
     <div class="section__offer__cards">
         @foreach ($offers as $offer)
-            <div class="section__offer__card">
+            <div class="section__offer__card" 
+                data-animate="fade slide" 
+                data-duration="0.6s"
+                data-direction="bottom"
+                data-distance="30px">
                 <i class="{{$offer->icon}} section__offer__card__icon"></i>
                 <h3 class="section__offer__card__title">{{$offer->title}}</h3>
                 <p class="section__offer__card__description">{{$offer->description}}</p>
@@ -39,7 +43,7 @@
     </div>
 </div>
 
-<div class="section section__slogan">
+<div class="section section__slogan" data-animate="fade" data-duration="1.2s" data-threshold="0.3">
     <h1 class="section__slogan__header">{{$settings['sloganSec_header']}}</h1>
 
     <div class="section__slogan__img-containter">
@@ -52,12 +56,17 @@
         <img class="section__contact__img" src="{{ asset('storage/images/'.$media['contactSec_photo']['path']) }}" alt="{{$media['contactSec_photo']['alt']}}">
     </div>
     
-    <div class="section__contact__text">
+    <div class="section__contact__text" 
+        data-animate="fade slide" 
+        data-direction="right" 
+        data-duration="1.2s" 
+        data-distance="40px" 
+        data-threshold="0.3">
         <h1  class="section__contact__header">{{$settings['contactSec_header']}}</h1>
 
         <div class="section__contact__contact-info">
             <h2>{{$settings['tag_contact']}}</h2>
-            <p>{{$settings['phoneNumber']}}</p>
+            <a href="tel:{{$settings['phoneNumber']}}" class="link-inline">{{$settings['phoneNumber']}}</a>
             <a href="mailto:{{$settings['mail']}}" class="link-inline">{{$settings['mail']}}</a>
         </div>
     </div>

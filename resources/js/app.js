@@ -1,3 +1,4 @@
+import './fade-in-effect';
 import './bootstrap';
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
