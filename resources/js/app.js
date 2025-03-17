@@ -1,5 +1,5 @@
-import './fade-in-effect';
 import './bootstrap';
+import './fade-in-effect';
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function (e) {
