@@ -6,7 +6,7 @@
 
 <div class="section section__home">
     <div class="section__home__description">
-        <h1 class="section__home__header">{{$settings['homeSec_header']}}</h1>
+        <h1 class="section__home__header">{{$settings['homeSec_header']}}22</h1>
         <h2>{{$settings['homeSec_caption']}}</h2>
     
         
